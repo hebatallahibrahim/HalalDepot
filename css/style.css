@@ -530,14 +530,7 @@ animation-name: scrollWheel;
     transform: translate3d(-50%, 20px, 0);
     opacity: 0;
   }
-  @media (min-width: 768px) {
-    from {
-      -webkit-transform: translate(-50%, 0);
-      -webkit-transform: translate3d(-50%, 0, 0);
-      transform: translate(-50%, 0);
-      transform: translate3d(-50%, 0, 0);
-      opacity: 1;
-    }
+ 
     to {
       -webkit-transform: translate(-50%, 40px);
       -webkit-transform: translate3d(-50%, 40px, 0);
@@ -546,7 +539,7 @@ animation-name: scrollWheel;
       opacity: 0;
     }
   }
-}
+
 
 @keyframes scrollWheel {
   from {
@@ -563,30 +556,16 @@ animation-name: scrollWheel;
     transform: translate3d(-50%, 20px, 0);
     opacity: 0;
   }
-  @media (min-width: 768px) {
-    from {
-      -webkit-transform: translate(-50%, 0);
-      -webkit-transform: translate3d(-50%, 0, 0);
-      transform: translate(-50%, 0);
-      transform: translate3d(-50%, 0, 0);
-      opacity: 1;
-    }
-    to {
-      -webkit-transform: translate(-50%, 40px);
-      -webkit-transform: translate3d(-50%, 40px, 0);
-      transform: translate(-50%, 40px);
-      transform: translate3d(-50%, 40px, 0);
-      opacity: 0;
-    }
+  
   }
-}
+
 	
 /*------------------------------------------------------------------
     ABOUT AREA
 -------------------------------------------------------------------*/
 
 .about-main{
-	background:#E6E6E6;
+	background:#ede6e6fb;
 }
 .pad-top-100{
     padding-top: 90px;
@@ -661,7 +640,9 @@ animation-name: scrollWheel;
 	background-size:cover;
 	position:relative;
 }
-
+.bg{
+    background: url(../images/hero-2.jpg);
+}
 .special-menu:before {
     content: '';
     display: inline-block;
@@ -1988,4 +1969,19 @@ section {
     left: 0;
     width: 100%;
     height: 100%;
+  }
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  /* Responsive layout - makes a one column layout instead of a two-column layout */
+ /* navbar */
+ .pagination {
+    display: inline-block;
+    margin-right: 40px ;
+  }
+  .pagination div {
+   
+    float: left;
   }
